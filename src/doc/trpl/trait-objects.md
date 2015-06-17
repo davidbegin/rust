@@ -41,7 +41,7 @@ We can use this trait to perform static dispatch with trait bounds:
 # impl Foo for u8 { fn method(&self) -> String { format!("u8: {}", *self) } }
 # impl Foo for String { fn method(&self) -> String { format!("string: {}", *self) } }
 fn do_something<T: Foo>(x: T) {
-    x.method();
+  println!("the result of method(): {}", x.method());
 }
 
 fn main() {
@@ -63,11 +63,11 @@ functions. In other words, Rust generates something like this:
 # impl Foo for u8 { fn method(&self) -> String { format!("u8: {}", *self) } }
 # impl Foo for String { fn method(&self) -> String { format!("string: {}", *self) } }
 fn do_something_u8(x: u8) {
-    x.method();
+    println!("the result of method(): {}", x.method());
 }
 
 fn do_something_string(x: String) {
-    x.method();
+    println!("the result of method(): {}", x.method());
 }
 
 fn main() {
