@@ -87,7 +87,7 @@ existing in the binary, one for each type.
 
 Furthermore, compilers aren’t perfect and may “optimize” code to become slower.
 For example, functions inlined too eagerly will bloat the instruction cache
-(cache rules everything around us). This is part of the reason that `#[inline]`
+<a href="https://www.youtube.com/watch?v=PBwAxmrE194&t=0m19s">(cache rules everything around us)</a>. This is part of the reason that `#[inline]`
 and `#[inline(always)]` should be used carefully, and one reason why using a
 dynamic dispatch is sometimes more efficient.
 
