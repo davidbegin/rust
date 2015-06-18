@@ -35,8 +35,8 @@ assert_eq!(4, plus_two(2));
 
 You’ll notice a few things about closures that are a bit different from regular
 functions defined with `fn`. The first is that we did not need to
-annotate the types of arguments the closure takes or the values it returns. We
-can:
+annotate the types of arguments the closure takes or the values it returns.
+Here's the first example with type annotations:
 
 ```rust
 let plus_one = |x: i32| -> i32 { x + 1 };
